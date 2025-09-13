@@ -19,7 +19,10 @@ const KEY = import.meta.env.VITE_OMDB_API_KEY;
 function App() {
   const [query, setQuery] = useState<string>("");
   const [movies, setMovies] = useState<Movie[]>([]);
-  const [watched, setWatched] = useLocalStorage<WatchedMovie[]>("watchedMovies",[]);
+  const [watched, setWatched] = useLocalStorage<WatchedMovie[]>(
+    "watchedMovies",
+    []
+  );
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string>("");
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -47,7 +50,7 @@ function App() {
           setIsLoading(true);
           setError("");
           const res = await fetch(
-            `http://www.omdbapi.com/?apikey=${KEY}&s=${query}`
+            `https://www.omdbapi.com/?apikey=${KEY}&s=${query}`
           );
 
           if (!res.ok) throw new Error("Failed to fetch movies");

@@ -46,7 +46,7 @@ function MovieDetails({
       setError("");
       try {
         const res = await fetch(
-          `http://www.omdbapi.com/?apikey=${KEY}&i=${selectedId}`,
+          `https://www.omdbapi.com/?apikey=${KEY}&i=${selectedId}`,
           { signal: controller.signal }
         );
         if (!res.ok) throw new Error("Failed to fetch movie details");
