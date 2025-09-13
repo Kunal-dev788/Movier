@@ -41,7 +41,7 @@ _Add your demo video link here (GitHub asset or Loom/YouTube)._
 ---
 
 ## Project Live on:
-👉 [https://movie-explorer-demo.netlify.app/](https://movie-explorer-demo.netlify.app/)  
+👉[ [https://movie-explorer-demo.netlify.app/](https://movie-explorer-demo.netlify.app/)  ](https://exploremovier.netlify.app/)
 
 ---
 
