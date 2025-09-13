@@ -36,18 +36,28 @@ You can search for movies, view detailed info, rate them with a ⭐ custom star 
 ![App Screenshot](/public/screenshots/demo4.png)  
 
 ## 🎥 Demo Video:
-_Add your demo video link here (GitHub asset or Loom/YouTube)._
+https://github.com/user-attachments/assets/1bc4b235-4667-4ad1-8aae-15c4bc78b267
 
 ---
 
 ## Project Live on:
-👉[ [https://movie-explorer-demo.netlify.app/](https://movie-explorer-demo.netlify.app/)  ](https://exploremovier.netlify.app/)
+👉 https://exploremovier.netlify.app
 
 ---
 
 ## 🚀 Getting Started
 
 ### 1. Clone the repository
-```bash
-git clone https://github.com/
-cd Movier
+- git clone https://github.com/Kunal-dev788/Movier
+- cd Movier
+
+### 2. Install dependencies
+- npm install
+
+### 3. Add your API key
+#### Create a .env file in the root directory and add:
+- VITE_OMDB_API_KEY=your_api_key_here
+
+### 4. Run the project
+- npm run dev
+
